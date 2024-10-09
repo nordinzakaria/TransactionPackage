@@ -42,7 +42,7 @@ namespace TransactionPackage
         {
             for (int i = 0; i < transactions.Count; i++)
             {
-                Console.WriteLine(transactions[i].getVal());
+                Console.WriteLine(transactions[i].Val);
             }
         }
     }
