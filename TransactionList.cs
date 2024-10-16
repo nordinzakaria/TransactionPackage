@@ -9,6 +9,8 @@ namespace TransactionPackage
 {
     public class TransactionList
     {
+        public static int MAX = 100;
+
         // data 
         private List<Transaction> transactions; // transactions is an Array object
 
@@ -37,6 +39,8 @@ namespace TransactionPackage
         {
             transactions.Add(transaction);
         }
+
+        
 
         public void Display()
         {
