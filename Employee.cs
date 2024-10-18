@@ -10,5 +10,11 @@ namespace TransactionPackage
     {
         public string Name { get; set; }
         public string ID { get; set; }
+
+        public Employee(string name, string id) 
+        { 
+            Name = name;
+            ID = id;
+        }
     }
 }

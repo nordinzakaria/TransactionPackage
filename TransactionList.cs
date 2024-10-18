@@ -12,7 +12,7 @@ namespace TransactionPackage
         public static int MAX = 100;
 
         // data 
-        private List<Transaction> transactions; // transactions is an Array object
+        public List<Transaction> transactions { set; get; } // transactions is an Array object
 
         // constructor -
         // 1) no return type
@@ -40,14 +40,17 @@ namespace TransactionPackage
             transactions.Add(transaction);
         }
 
-        
-
         public void Display()
         {
             for (int i = 0; i < transactions.Count; i++)
             {
                 Console.WriteLine(transactions[i].Val);
             }
+        }
+
+        public void Clear()
+        {
+            transactions.Clear();
         }
     }
 }
