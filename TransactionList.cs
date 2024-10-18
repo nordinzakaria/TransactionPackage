@@ -40,6 +40,16 @@ namespace TransactionPackage
             transactions.Add(transaction);
         }
 
+        public Transaction Get(string ID)
+        {
+            foreach (Transaction trans in transactions)
+            {
+                if (trans.Id == ID)
+                    return trans;
+            }
+            return null;
+        }
+
         public void Display()
         {
             for (int i = 0; i < transactions.Count; i++)

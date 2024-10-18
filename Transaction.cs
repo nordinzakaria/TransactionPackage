@@ -14,7 +14,10 @@ namespace TransactionPackage    // declare the collection(namespace)
         public DateTime Date { get; set; }
         public Employee Employee { get; set; } = new Employee();
 
-        public Transaction() { }
+        public Transaction() 
+        {
+            Date = DateTime.Now;
+        }
         public Transaction(float val, DateTime date, string id)
         {
             Val = val;
