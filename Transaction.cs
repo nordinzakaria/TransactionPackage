@@ -9,11 +9,12 @@ namespace TransactionPackage    // declare the collection(namespace)
 {
     public class Transaction
     {
-        public string Id { get; }
+        public string Id { get; set;  }
         public float Val {  get; set; }
         public DateTime Date { get; set; }
-        public Employee Employee { get; set; }
+        public Employee Employee { get; set; } = new Employee();
 
+        public Transaction() { }
         public Transaction(float val, DateTime date, string id)
         {
             Val = val;
