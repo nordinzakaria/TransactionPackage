@@ -25,12 +25,17 @@ namespace TransactionPackage    // declare the collection(namespace)
             Id = id;
         }
 
-            public Transaction(float val, DateTime date) 
+        public Transaction(float val, DateTime date) 
         {
             Val = val;
             Date = date;
 
             Id = date.Ticks.ToString();
+        }
+
+        public void Report()
+        {
+            Console.WriteLine("val: " + Val + "," + " date:" + Date.ToString());
         }
     }
 }

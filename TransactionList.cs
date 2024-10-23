@@ -58,6 +58,17 @@ namespace TransactionPackage
             }
         }
 
+        public float Total()
+        {
+            float total = 0;
+            foreach (Transaction trans in transactions)
+            {
+                total += trans.Val;
+            }
+            return total;
+        }
+
+
         public void Clear()
         {
             transactions.Clear();
